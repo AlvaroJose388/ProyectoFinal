@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Clientes</title>
+    <link rel="stylesheet" href="../css/RegistroCliente.css">
+    <script src="../js/funcionCliente.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../html/PaginaPrincipalVendedor.html" class="btn-neon1">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span> Menu Principal
+        </a>
+        <div class="flexContainer">
+            <div class="contenedorIzquierdo">
+                <a href="../html/Login.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span> CERRAR SESIÓN
+                </a>
+
+            </div>
+            <div class="contenedorDerecho">
+                <a href="../html/paginaPrincipal.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span> PAGINA PRINCIPAL
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="gridContainer1">
+        <div style="margin-top: 60px; text-align: center;">
+            <label for="">Tipo de documentación</label> &emsp;&emsp;
+            <select name="" id=""><option value="">Elija Una opción</option> 
+                <option value="">Cédula de Ciudadanía</option>
+                <option value="">Cédula de Extranjería</option>
+                <option value="">Tarjeta de identidad</option></select> <br> <br>
+            <label for="">Número de documentación</label> &ensp;&ensp;
+            <input type="number" name=" " id=" ">
+            <br><br>
+            <label for="">Nombres</label> &emsp;&emsp;<input type="text">
+            <br><br>
+            <label for="">Apellidos</label> &emsp;&ensp;
+            <input type="text" name="" id="">
+            <br><br>
+
+            <label for="">Teléfonos</label> &emsp;&emsp;
+            <input type="number" name="" id="telef1">&emsp;
+            <button id="btn_guardar" onclick="guardar()">Añadir</button>
+            <br><br>
+            <label for="">Correo Electronico</label> &emsp; &emsp;
+            <input type="email" name="" id="">
+            <br><br>
+
+            <form action="../../form-result.php" method="post" target="_blank">
+
+                <p>
+
+                    <label for="">Desea que se le envie la factura via correo Electronico</label>
+
+                    <input type="radio" name="empleoactual" value="tiempocompleto"> SI
+
+                    <input type="radio" name="empleoactual" value="mediodia"> NO
+
+
+
+                </p>
+
+            </form>
+            <br> <br>
+            <label for="">Redes Sociales</label>&emsp;&emsp;
+            <input type="text" name="" id="redes1"> &emsp;
+
+            <button id="btn_guardar" onclick="guardar1()">Añadir</button>
+            <br><br> <br>
+            <button onclick="alert('Cliente Registrado')">Registrar</button>
+
+
+
+        </div>
+        <div style="margin-top: 60px; " class="gridContainer1">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Telefonos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablita">
+
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Redes sociales</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablita2">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

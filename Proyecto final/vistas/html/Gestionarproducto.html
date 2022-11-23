@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar producto</title>
+    <link rel="stylesheet" href="../css/estilosGestionarproducto.css">
+    <link rel="stylesheet" href="../css/estilosadministradorgeneral.css">
+    <script src="../js/gestionarProductos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="flexContainer">
+            <div class="contenedorIzquierdo"> <a  style="margin-left: 20px" href="../html/paginaPriciplAdministrador.html" class="btn-neon1">    
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Menu Principal
+            </a > </div>
+                <div class="contenedorDerecho"> 
+                    <a href="../html/Login.html" class="btn-neon">    
+                        <span id="span1"></span>
+                        <span id="span2"></span>
+                        <span id="span3"></span>
+                        <span id="span4"></span>
+                        CERRAR SESIÓN
+                    </a>
+                <a href="../html/paginaPrincipal.html" class="btn-neon">    
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    PAGINA PRINCIPAL
+                </a></div>
+        </div>
+    </header>
+    <div class="flexContainer">
+
+        <div class="contenedorIzquierdo" style="margin-top: 6%">
+
+            <div class="espacio">Codigo <br><input id="cod"  type="text"></div>
+            <div class="espacio">Nombre <br><input id="nomb" type="text"></div>
+            <div class="espacio"><label for="">Imagen </label> <br> <input type="file"></div>
+            <div class="espacio">Stock <br><input id="stock" type="text"></div>
+    
+
+        </div>
+
+        <div class="contenedorDerecho" style="margin-top: 6%">
+            <div class="espacio">Referencia <br><input id="ref"  type="text"></div>
+            <div class="espacio">Porcentaje de ganancia <br><input id="porga"  type="text"></div>
+            <div class="espacio">Precio <br><input id="Precio"  type="text"></div>
+            <div class="espacio">Stock Minimo <br><input id="stockmin"  type="text"></div>
+        </div>
+
+
+    </div>
+   
+   
+
+
+   <div style="padding-top: 5%">
+    <table >
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Referencia</th>
+                <th>Porcentaje de ganancia</th>
+                <th>Stock</th>
+                <th>StockMinimo</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody id="tablita">
+
+        </tbody>
+    </table>
+   </div>
+
+    <button id="btn_guardar" onclick="guardar()">Añadir</button>
+
+
+</body>
+</html>

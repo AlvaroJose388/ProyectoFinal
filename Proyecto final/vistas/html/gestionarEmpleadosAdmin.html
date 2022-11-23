@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestionar empleados</title>
+    <link rel="stylesheet" href="../css/estiliosGestionarEmpleadosAdmin.css">
+    <link rel="stylesheet" href="../css/estilosadministradorgeneral.css">
+</head>
+<body>
+    <header>
+        <div class="flexContainer">
+            <div class="contenedorIzquierdo">  <a  style="margin-left: 20px" href="../html/paginaPriciplAdministrador.html" class="btn-neon1">    
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            Menu Principal
+        </a > </div>
+            <div class="contenedorDerecho"> 
+                <a href="../html/Login.html" class="btn-neon">    
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    CERRAR SESIÓN
+                </a>
+            <a href="../html/paginaPrincipal.html" class="btn-neon">    
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                PAGINA PRINCIPAL
+            </a></div>
+        </div>
+    </header>
+    <div style="padding-top: 5%">
+
+        <div class="espacio"><select style="width: 177px">
+            <!-- Opciones de la lista -->
+            <option>Numero Identificación</option>
+            <option  selected>Cedula Ciudadania</option> <!-- Opción por defecto -->
+            <option>Cedula Extrangeria</option>
+          </select> 
+            <label for="">Tipo de documentación</label></div>
+            <div class="espacio"><input type="text"> <label for="">Numero de documentación</label></div>
+
+        <div class="espacio"><input type="text"> <label for="">Nombres</label></div>
+        <div class="espacio"><input type="text"> <label for="">Apellidos</label></div>
+
+        
+       
+        <div class="espacio"><input type="text"> <label for="">Numero celular</label></div>
+        <div class="espacio"><input type="text"> <label for="">Contraseña</label></div>
+        <div class="espacio"><input type="text"> <label for="">Confirmar Contraseña</label></div>
+        <div class="espacio"><input type="text"> <label for="">Direccion De residencia</label></div>
+        <div class="espacio"><select style="width: 177px">
+            <!-- Opciones de la lista -->
+            <option> </option>
+            <option>Secretaria</option>
+            <option>Gerente</option> <!-- Opción por defecto -->
+            <option>Vendedor</option>
+          </select> 
+            <label for="">Rol</label></div>
+            <div style="padding: 2.5%;padding-left: 25%"><div><button onclick="alert('Empleado Registrado')">Registrar</button></div>
+    </div>
+
+    
+    
+</body>
+</html>

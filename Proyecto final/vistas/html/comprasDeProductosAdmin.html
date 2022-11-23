@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compras De Productos Admin</title>
+    <link rel="stylesheet" href="../css/estilosComprasDeProductosAdmin.css">
+    <link rel="stylesheet" href="../css/estilosadministradorgeneral.css">
+    <script src="../js/CompraProductos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="flexContainer">
+            <div class="contenedorIzquierdo">  <a  style="margin-left: 20px" href="../html/paginaPriciplAdministrador.html" class="btn-neon1">    
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Menu Principal
+            </a > </div>
+                <div class="contenedorDerecho"> 
+                    <a href="../html/Login.html" class="btn-neon">    
+                        <span id="span1"></span>
+                        <span id="span2"></span>
+                        <span id="span3"></span>
+                        <span id="span4"></span>
+                        CERRAR SESIÓN
+                    </a>
+                <a href="../html/paginaPrincipal.html" class="btn-neon">    
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    PAGINA PRINCIPAL
+                </a></div>
+        </div>
+    </header>
+    <div class="flexContainer">
+
+        <div class="contenedorIzquierdo" id="formulario">
+            
+            <div class="espacio" style="padding-left: 26%"><label for="">Código </label> <input id="3"  type="text"></div>
+            <div class="espacio" style="padding-left: 24%"><label for="">Cantidad</label> <input id="5"  type="text"></div>
+            
+        </div>
+
+        <div class="contenedorDerecho">
+            
+            <div class="espacio" style="padding-left: 14.1%"><label for="">Producto </label><input id="4"  type="text"></div>
+            <div class="espacio" style="padding-left: 17%"><label for="">Precio</label> <input id="6"  type="text"></div>
+        </div>
+
+    </div>
+   
+<div class="flexContainer">
+    <div style="padding: 2.5%;padding-left: 25%">
+        
+        <button class="button1" id="btn_guardar" onclick="guardar(), SumarAutomatico()">Añadir</button>
+    </div>
+    
+</div>
+</div>
+   
+
+    
+
+    <div >
+        <table >
+            <thead>
+                <tr>
+                    
+                    <th>Código </th>
+                    <th>Producto </th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Sub Total</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tablita">
+    
+            </tbody>
+        </table>
+        
+       </div>
+       <div style="padding: 2.5%;padding-left: 25%"><div><button class="button2" onclick="alert('Compra realizada')">Comprar</button></div>
+       <div  style="padding-left: 50%"><span>TOTAL: </span> <span style="color: red ; font-size: 30px;" id="r" ></span></div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+.flexContainer {
+    display: flex;    
+ 
+   
+    
+}
+.contenedorIzquierdo {
+   
+    width: 50%;
+    text-align: center;
+
+}
+.contenedorDerecho {
+   
+    width: 50%;
+    text-align: center;
+
+}
+
+.espacio{
+    padding: 1.5%;
+    padding-left: 15%;
+}

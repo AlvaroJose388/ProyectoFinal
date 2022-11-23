@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <link rel="stylesheet" href="../css/VentasVendedor.css">
+    <script src="../js/funcionVendedor.js"></script>
+</head>
+
+<body>
+    <div style="margin-bottom: 40px;">
+        <a style="margin-left: 20px" href="../html/PaginaPrincipalVendedor.html" class="btn-neon1">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span> Menu Principal
+        </a>
+    </div>
+    <header>
+        <div class="flexContainer">
+            <div class="contenedorIzquierdo">
+                <a href="../html/paginaPrincipal.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span> PAGINA PRINCIPAL
+                </a>
+            </div>
+            <div class="contenedorDerecho">
+                <a href="../html/Login.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span> CERRAR SESIÓN
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="gridContainer1">
+        <div style="margin-top: 40px;">
+            <h3>Cliente</h3>
+            <label for="">Numero de Identificación</label>&emsp;&ensp; <input type="text" name="" id="nameId"> <br> <br>&emsp;&emsp;&emsp;
+            <label for="">Nombres</label> &emsp; &emsp; &emsp; &emsp;<input type="text" id="canti"><br><br>
+        </div>
+        <div style="margin-top: 40px;">
+            <h3>Producto</h3> 
+
+            <label for="" style="margin-left: 45px;">Codigo</label> 
+            &emsp;&emsp;
+            <input type="text" name="" id="codi" >
+            <br><br>&emsp;&emsp;&ensp;
+
+            <label for="">Cantidad</label> &emsp; 
+            <input type="text" name="" id="nomb" />
+            <br> <br> &emsp;&emsp;&emsp; 
+
+            <label for="">Producto</label> &emsp;
+            <input type="text" id="precio">
+            <br><br> 
+            
+            <label for="" style="margin-left: 55px;">Precio</label>&ensp;&emsp;
+            <input type="text" id="produ" />
+        </div>
+    </div>
+    <div class="gridContainer1">
+        <div style="text-align: end;"><button id="btn_guardar" onclick="guardar() , SumarAutomatico()" >Añadir</button></div>
+
+    </div>
+    <div style="margin-top: 60px; ">
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Sub Total</th>
+
+
+
+                </tr>
+            </thead>
+            <tbody id="tablita">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="gridContainer1">
+        <div style="text-align: end;"><button onclick="alert('Venta realizada')">Vender</button></div>
+        <div> <span>TOTAL: </span> <span style="color: red ; font-size: 30px;" id="r" ></span>
+        </span>
+        </div>
+    </div>
+   
+
+    
+    
+
+
+
+
+
+</body>
+
+</html>

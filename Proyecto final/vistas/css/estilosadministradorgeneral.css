@@ -1,0 +1,206 @@
+body {
+    background-image: url(../recursos/Imagenes/WhatsApp\ Image\ 2022-11-15\ at\ 21.07.17.jpeg);
+    
+    background-size: cover;
+   
+    
+}
+
+/* estilo botones */
+
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: blue;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: #B0C6D9;
+    border-radius: 10px;
+}
+.btn-neon:hover{
+    background: #012840;
+    box-shadow: 0 0 10px #012840, 0 0 40px #012840, 0 0 80px #012840;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#012840);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#012840);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#012840);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#012840);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+
+
+
+
+.btn-neon1{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: black;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+    
+    
+    
+    border-radius: 5px;
+}
+.btn-neon1:hover{
+    background: white;
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    transition-delay: 1s;
+ }
+.btn-neon1 span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,white);
+ }
+ .btn-neon1:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,white);
+}
+ .btn-neon1:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,white);
+}
+.btn-neon1:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,white);
+}
+.btn-neon1:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+button {
+    border: none;
+    color: #333333;
+    border-radius: 5px;
+    background: linear-gradient( cyan, lightblue);
+    font-size: 30px;
+    width: 20%;
+    height: auto;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.6);
+    transition: all 100ms;
+}
+button:hover {
+    transform: translate(-2px);
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.6);
+    background: linear-gradient( rgb(79, 235, 235), rgb(50, 182, 226));
+}
+button:active {
+    transform: translate(2px);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.button1 {
+    border: none;
+    color: #333333;
+    border-radius: 5px;
+    background: linear-gradient( cyan, lightblue);
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.6);
+    transition: all 100ms;
+}
+button:hover {
+    transform: translate(-2px);
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.6);
+    background: linear-gradient( rgb(79, 235, 235), rgb(50, 182, 226));
+}
+button:active {
+    transform: translate(2px);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.6);
+
+}
